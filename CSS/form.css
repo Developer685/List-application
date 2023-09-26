@@ -1,0 +1,34 @@
+.form {
+    margin: 1%;
+    padding: 0px;
+    background-color: teal;
+    max-width: 325px;
+    position: absolute;
+    transform-origin: top left;
+    scale: 3;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.inputNewTask {
+    padding: 1%;
+}
+
+.deleteButton {
+    padding: 1px;
+    background-color: #D2122E;
+    border: solid black 1px;
+    border-radius: 4px;
+}
+
+.doneButton {
+    background-color: #50C878;
+    border: solid black 1px;
+    border-radius: 4px;
+}
+
+.list {
+    margin: 1% -3%;
+    border: solid whitesmoke 1px;
+}
