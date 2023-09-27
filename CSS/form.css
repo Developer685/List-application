@@ -1,34 +1,74 @@
+.headline {
+    margin: 2% 2% 5%;
+    text-align: left;
+    transform-origin: left top;
+    scale: 3;
+}
+
+
 .form {
     margin: 1%;
     padding: 0px;
-    background-color: teal;
-    max-width: 325px;
+    background-color: whitesmoke;
+    max-width: 35%;
     position: absolute;
     transform-origin: top left;
     scale: 3;
     display: flex;
     flex-wrap: wrap;
 
+
+
 }
 
-.inputNewTask {
+.container {
+    margin: 1%;
     padding: 1%;
+    background-color: wheat;
+    border: solid black 1px;
+    background-size: 1px;
 }
+
+
+
 
 .deleteButton {
+    margin: 0px 1px;
     padding: 1px;
     background-color: #D2122E;
     border: solid black 1px;
     border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 .doneButton {
     background-color: #50C878;
     border: solid black 1px;
     border-radius: 4px;
+    
 }
 
-.list {
-    margin: 1% -3%;
-    border: solid whitesmoke 1px;
+
+
+.unorderedList {
+    margin: -6px 1%;
+    padding: 1% 34% 3% 4%;
+    background-color: wheat;
+    border: black solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+}
+
+.newTaskInput {
+    margin-left: 3px;
+}
+
+.newTaskButton {
+    background-color: lightgray;
+    border: black solid 1px;
+    border-radius: 4px;
 }
