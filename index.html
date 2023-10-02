@@ -8,6 +8,7 @@
     <script defer src="JS/functions.js"></script>
     <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/form.css" rel="stylesheet">
+    <link href="CSS/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,21 +17,32 @@
 </head>
 
 <body>
-    <h1 class="headline">Lista zadań</h1>
-    <form class="js-form form">
+    <main class="main">
 
-        <div class="containerInput">
-            Stwórz nowe zadanie<input class="js-newTask newTaskInput">
-            <button class="js-buttonNewTask newTaskButton">Dodaj zadanie</button>
-        </div>
-        <div class="containerList">
-            <ul class="js-tasks unorderedList"> </ul>
-        </div>
+        <header>
+            <h1 class="headline">Lista zadań</h1>
+        </header>
 
-    </form>s
+        <section class="section">
+            <h2 class="sectinon__headline">Stwórz nowe zadanie </h2>
+
+            <form class="js-form form">
+
+                <div class="containerInput">
+                    <input class="js-newTask newTaskInput">
+                    <button class="js-buttonNewTask newTaskButton">Dodaj zadanie</button>
+                </div>
+                <div class="containerList">
+                    <ul class="js-tasks unorderedList"> </ul>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
 
 
-    
+
 </body>
 
 </html>

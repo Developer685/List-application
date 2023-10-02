@@ -52,7 +52,7 @@
       //✅
       for (const task of tasks) {
          htmlString += `
-            <div class="list"> <div><li class="list ${task.done ? "list__done" : "🟩"}">
+            <div class="list"> <div><li class="${task.done ? "list__done" : "🟩"}">
             ${task.content}</div>
             <div class="buttonsContainer"> <button class="js-done doneButton ${task.done ? "js-done doneButtonChecked" : "🟩"}"> 🟩 </button>
             <button class="js-remove deleteButton"> Usuń </button> </div>

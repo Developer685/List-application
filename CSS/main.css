@@ -1,0 +1,10 @@
+.main {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.headline {
+    margin: 2% 2% 5%;
+    text-align: left;
+}
