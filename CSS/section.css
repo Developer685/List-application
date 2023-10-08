@@ -8,28 +8,9 @@
     border-bottom: 1px solid black;
 }
 
-.containerInput {
-    background-color: wheat;
 
-}
-
-.newTaskInput {
-    margin: 0% 1%;
+.sectionTasks {
+    list-style-type: none;
     padding: 10px;
-    border: 1px solid #ddd;
 
-}
-
-.list {
-    display: grid;
-    grid-template-columns: 1fr 80px;
-    padding: 10px;
-    grid-gap: 12px;
-    align-items: center;
-    word-break: break-word;
-    border-bottom: 1px solid black;
-}
-
-.section__body {
-    padding: 10px;
 }

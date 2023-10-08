@@ -11,73 +11,14 @@
     }
 }
 
-.deleteButton {
-    background-color: #bf0603;
-    color: whitesmoke;
-    height: 30px;
-    width: 30px;
-    border: none;
-    
-    transition: 0.5s;
-}
-
-.deleteButton:hover {
-    background-color: #bf0603;
-    border-radius: 4px;
-    transform: scale(1.1);
-}
-
-.doneButton {
-    padding: 1px 0px 0px 0px;
-    height: 30px;
-    width: 30px;
-    background-color: #70e000;
-    border: none;
-    transition: 0.5s;
+.form__newTaskInput {
+    margin: 0% 1%;
+    padding: 10px;
+    border: 1px solid #ddd;
 
 }
 
-.doneButton:hover {
-    padding: 1px 0px 0px 0px;
-    background-color: #70e000;
-    border: 1px solid #70e000;
-    border-radius: 4px;
-    transform: scale(1.1);
-}
-
-.containerList {
-    margin: 1% 1%;
-    padding: 1% 0% 3% 0%;
-    border: black solid 1px;
-    background-color: wheat;
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 80%;
-    max-width: 80%;
-
-}
-
-
-
-.list__done {
-    display: flex;
-    justify-content: space-between;
-    text-decoration: line-through;
-}
-
-.buttonsContainer {
-    margin: 1px;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-.tasks {
-    list-style-type: none;
-
-}
-
-.newTaskButton {
+.form__newTaskButton {
     margin: 1%;
     padding: 0;
     background-color: hsl(0, 0%, 83%);
@@ -86,7 +27,7 @@
 }
 
 
-.newTaskButton:hover {
+.form__newTaskButton:hover {
     background-color: hsl(0, 3%, 63%);
     transform: scale(1.1);
 }

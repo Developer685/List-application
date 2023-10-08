@@ -22,7 +22,7 @@
    };
 
    const bindEvents = () => {
-      const removeButtons = document.querySelectorAll(".js-remove");
+      const removeButtons = document.querySelectorAll(".js-list__deleteButton");
 
       removeButtons.forEach((removeButtons, taskIndex) => {
          removeButtons.addEventListener("click", () => {
@@ -30,7 +30,7 @@
          });
       });
 
-      const toggleDoneButtons = document.querySelectorAll(".js-done");
+      const toggleDoneButtons = document.querySelectorAll(".js-list__doneButton");
 
       toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
          toggleDoneButton.addEventListener("click", () => {
@@ -45,15 +45,15 @@
       //✅
       for (const task of tasks) {
          htmlString += `
-            <div class="list"> <div><li class="${task.done ? "list__done" : ""}">
-            ${task.content}</div>
-            <div class="buttonsContainer"> <button class="js-done doneButton "> ${task.done ? "✔" : ""}</button>
-            <button class="js-remove deleteButton"> 🗑 </button> </div>
+            <div class="list"><li class="${task.done ? "list__done" : ""}">
+            ${task.content}
+            <div class="list__buttonsContainer"> <button class="js-list__doneButton list__doneButton "> ${task.done ? "✔" : ""}</button>
+            <button class="js-list__deleteButton list__deleteButton"> 🗑 </button> </div>
             
             </li> </div>
             `;
       }
-      document.querySelector(".js-tasks").innerHTML = htmlString;
+      document.querySelector(".js-sectionTasks").innerHTML = htmlString;
 
       bindEvents();
    };
@@ -61,7 +61,7 @@
    const onFormSubmit = (event) => {
       event.preventDefault();
 
-      const newTaskContent = document.querySelector(".js-newTaskInput").value.trim();
+      const newTaskContent = document.querySelector(".js-form__newTaskInput").value.trim();
 
 
       if (newTaskContent === "") {
