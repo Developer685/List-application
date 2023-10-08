@@ -1,46 +1,48 @@
-
 .form {
-    margin: 1%;
-    padding: 0px;
-    background-color: whitesmoke;
-    max-width: 35%;
-    transform-origin: top left;
-    scale: 3;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px;
+    margin: 1px;
 }
 
-
+@media (max-width: 730px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
 
 .deleteButton {
-    margin: 0px 1px;
-    padding: 1px;
-    background-color: hsl(351, 84%, 45%);
+    background-color: #bf0603;
+    color: whitesmoke;
+    height: 30px;
+    width: 30px;
     border: none;
-    border-radius: 4px;
+    
+    transition: 0.5s;
 }
 
-.deleteButton:hover{
-    background-color: hsl(351, 84%, 34%);
+.deleteButton:hover {
+    background-color: #bf0603;
+    border-radius: 4px;
+    transform: scale(1.1);
 }
 
 .doneButton {
     padding: 1px 0px 0px 0px;
-    background-color: hsla(140, 62%, 55%, 0);
-    border: 1px solid  hsl(140, 34%, 46%);
-    border-radius: 4px;
-
-}
-.doneButtonChecked{
-    background-image: url("https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/512/Check-Mark-Button-Flat-icon.png");
-    background-color: hsl(140, 34%, 46%);
+    height: 30px;
+    width: 30px;
+    background-color: #70e000;
+    border: none;
+    transition: 0.5s;
 
 }
 
-.doneButton:hover{
+.doneButton:hover {
     padding: 1px 0px 0px 0px;
-    background-color:  hsl(140, 34%, 46%);
+    background-color: #70e000;
+    border: 1px solid #70e000;
+    border-radius: 4px;
+    transform: scale(1.1);
 }
 
 .containerList {
@@ -55,11 +57,9 @@
 
 }
 
-.list {
-    display: flex;
-    justify-content: space-between;
-}
-.list__done{
+
+
+.list__done {
     display: flex;
     justify-content: space-between;
     text-decoration: line-through;
@@ -69,22 +69,24 @@
     margin: 1px;
     display: flex;
     justify-content: flex-end;
-       
+
 }
 
-.unorderedList {
-    list-style-type: decimal;
-}
+.tasks {
+    list-style-type: none;
 
-.newTaskInput {
-    margin-left: 3px;
 }
 
 .newTaskButton {
+    margin: 1%;
+    padding: 0;
     background-color: hsl(0, 0%, 83%);
     border: black solid 1px;
-    border-radius: 4px;
+    transition: 0.5s;
 }
-.newTaskButton:hover{
-background-color: hsl(0, 3%, 63%);;
+
+
+.newTaskButton:hover {
+    background-color: hsl(0, 3%, 63%);
+    transform: scale(1.1);
 }

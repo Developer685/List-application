@@ -1,14 +1,35 @@
 .section {
-    margin: auto;
+    background-color: wheat;
+}
+
+.section__headline {
+    padding: 20px;
+    font-size: 25px;
+    border-bottom: 1px solid black;
 }
 
 .containerInput {
-    margin: 1%;
-    padding: 1% 3% 1% 3%;
-    min-width: 80%;
-    max-width: 80%;
     background-color: wheat;
-    border: solid black 1px;
-    background-size: 1px;
-   
+
+}
+
+.newTaskInput {
+    margin: 0% 1%;
+    padding: 10px;
+    border: 1px solid #ddd;
+
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    padding: 10px;
+    grid-gap: 12px;
+    align-items: center;
+    word-break: break-word;
+    border-bottom: 1px solid black;
+}
+
+.section__body {
+    padding: 10px;
 }
