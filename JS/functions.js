@@ -1,6 +1,6 @@
 {
    const tasks = [
-   
+
    ];
 
    const addNewTask = (newTaskContent) => {
@@ -45,8 +45,8 @@
       //✅
       for (const task of tasks) {
          htmlString += `
-            <div class="list"><li class="${task.done ? "list__done" : ""}">
-            ${task.content}
+            <div class="list"><div><li class="${task.done ? "list__done" : ""}">
+            ${task.content}</div>
             <div class="list__buttonsContainer"> <button class="js-list__doneButton list__doneButton "> ${task.done ? "✔" : ""}</button>
             <button class="js-list__deleteButton list__deleteButton"> 🗑 </button> </div>
             
