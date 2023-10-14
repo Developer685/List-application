@@ -1,11 +1,11 @@
 .list {
     display: grid;
-    grid-template-columns: 1fr 80px;
+    grid-template-columns: 30px 1fr 30px;
     padding: 10px;
     grid-gap: 12px;
     align-items: center;
     word-break: break-word;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ddd;
 }
 
 .list__done {
@@ -14,18 +14,12 @@
     text-decoration: line-through;
 }
 
-.list__buttonsContainer {
-    margin: 1px;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
 .list__doneButton {
+    justify-content: start;
     padding: 1px 0px 0px 0px;
     height: 30px;
     width: 30px;
-    background-color: #70e000;
+    background-color: hsl(120, 56%, 34%);
     border: none;
     transition: 0.5s;
 
@@ -33,14 +27,13 @@
 
 .list__doneButton:hover {
     padding: 1px 0px 0px 0px;
-    background-color: #70e000;
+    background-color: hsl(120, 55%, 43%);
     border: none;
-    border-radius: 4px;
     transform: scale(1.1);
 }
 
 .list__deleteButton {
-    background-color: #bf0603;
+    background-color: hsl(350, 84%, 46%);
     color: whitesmoke;
     height: 30px;
     width: 30px;
@@ -49,7 +42,6 @@
 }
 
 .list__deleteButton:hover {
-    background-color: #bf0603;
-    border-radius: 4px;
+    background-color: hsl(1, 96%, 45%);
     transform: scale(1.1);
 }

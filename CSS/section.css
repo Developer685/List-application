@@ -1,16 +1,18 @@
 .section {
-    background-color: wheat;
+    background-color: white;
 }
 
 .section__headline {
+    margin-bottom: 0;
     padding: 20px;
     font-size: 25px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ddd;
 }
 
 
 .sectionTasks {
+    margin: 1px;
     list-style-type: none;
-    padding: 10px;
+    padding: 25px;
 
 }
