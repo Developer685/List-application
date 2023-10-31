@@ -1,0 +1,14 @@
+.tasks {
+    list-style: none;
+    padding: 28;
+    margin: 0;
+}
+
+.tasksList__item--hidden {
+    display: none;
+}
+
+.tasksList__taskContent {
+    margin: 0;
+    padding: 0;
+}

@@ -15,7 +15,6 @@
 .form__newTaskInput {
     padding: 10px;
     border: 1px solid #ddd;
-
 }
 
 .form__newTaskButton {
@@ -25,7 +24,6 @@
     background-color: teal;
     transition: 0.5s;
 }
-
 
 .form__newTaskButton:hover {
     background-color: rgb(1, 182, 182);

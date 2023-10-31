@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <link href="CSS/main.css" rel="stylesheet">
     <link href="CSS/section.css" rel="stylesheet">
     <link href="CSS/list.css" rel="stylesheet">
+    <link href="CSS/tasks.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,29 +19,39 @@
 
 </head>
 
+
 <body>
     <main class="main">
         <header>
-            <h1 class="main__headline">Lista zadań</h1>
+            <h1>
+                Lista zadań
+            </h1>
         </header>
         <section class="section">
-            <h2 class="section__headline">Dodaj nowe zadanie</h2>
-            <form class="js-form form">
-                <input class="js-form__newTaskInput form__newTaskInput" placeholder="Co jest do zrobienia?">
-                <button class="form__newTaskButton">Dodaj zadanie</button>
-            </form>
+            <h2 class="section__headline">
+                Dodaj nowe zdanie
+            </h2>
+            <div class="section__body">
+                <form class="form js-form">
+                    <input class="form__newTaskInput js-newTaskInput" placeholder="Co jest do zrobienia?">
+                    <button class="form__newTaskButton">
+                        Dodaj zadanie
+                    </button>
+                </form>
+            </div>
         </section>
 
         <section class="section">
-            <header>
-                <h2 class="section__headline">Lista zadań</h2>
-            </header>
-            <ul class="js-sectionTasks sectionTasks"> </ul>
+            <h2 class="section__headline">
+                Lista zadań
+            </h2>
+            <div>
+                <div class="main__headlineButtons js-main__headlineButtons"></div>
+                <ul class="tasks js-tasks"></ul>
+            </div>
+
         </section>
     </main>
-
-
-
 </body>
 
 </html>

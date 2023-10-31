@@ -8,3 +8,34 @@
     margin: auto;
     text-align: left;
 }
+
+.main__headlineButtons {
+    padding: 1%;
+}
+
+.main__button {
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    color: teal;
+    transition: 0.5s;
+}
+
+.main__button:hover {
+    cursor: pointer;
+    color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.main__button:disabled {
+    color: #999;
+    cursor: default;
+}
+
+@media(max-width:767px) {
+    .main__button:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
